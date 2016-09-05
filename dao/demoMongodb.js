@@ -46,16 +46,16 @@ var nameModel = db.model('demo', nameSchema);
 function add(cb) {
     // 判断是否存在
     searchOne({
-        name: 'xinshangshangxin'
+        name: 'Geocld'
     }).then(function(data) {
         if (data) {
-            console.log('已经存在');
+            console.log('is exies');
             cb && cb();
         }
         else {
             //  添加一条
             nameModel.create({
-                name: 'xinshangshangxin'
+                name: 'Geocld'
             }, function(err, doc) {
                 cb && cb();
             });

@@ -16,10 +16,10 @@ http.createServer(function(req, res) {
         // 验证 mongodb 是否链接
         monCon.searchOne()
             .then(function(data) {
-                res.end(info + '    并从mongodb中取出了 ' + data.name);
+                res.end(info + '    get from mongodb ' + data.name);
             })
             .catch(function(e) {
-                res.end(info + '    mongodb查询出错了 (┬＿┬)');
+                res.end(info + '    mongodb error (┬＿┬)');
             });
     });
 

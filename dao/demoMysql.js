@@ -19,10 +19,10 @@ connection.connect(function(err) {
 function test(cb) {
     connection.query('SELECT 1', function(err, rows) {
         if (err) {
-            cb('mysql链接出错!!!');
+            cb('mysql connect error!!!');
         }
         else {
-            cb('mysql链接成功~~~');
+            cb('mysql link success~~~');
         }
     });
 }
