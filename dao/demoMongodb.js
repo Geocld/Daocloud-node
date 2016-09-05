@@ -70,3 +70,4 @@ function searchOne(condition) {
 
 exports.searchOne = searchOne;
 exports.add = add;
+
