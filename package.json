@@ -1,26 +1,18 @@
 {
-  "name": "DaoCloudNodeDemo",
-  "version": "1.0.2",
-  "description": "DaoCloudNodeDemo",
-  "main": "app.js",
+  "name": "node-restful-api",
+  "version": "1.0.0",
+  "description": "node-restful-api-mongodb",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "test": "mocha --recursive --timeout 10000 -R spec --require should --harmony test/ --bail"
+    "start": "node server.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "git@gitcafe.com:xinshangshangxin/DaoCloud_Node_Demo.git"
-  },
-  "keywords": [
-    "DaoCloud"
-  ],
-  "author": "xinshangshangxin",
+  "author": "geocld",
   "license": "MIT",
   "dependencies": {
-    "mongoose": "^4.0.4",
-    "mysql": "git://github.com/felixge/node-mysql.git"
-  },
-  "devDependencies": {
-    "should": "^6.0.3"
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jsonwebtoken": "^7.1.9",
+    "mongoose": "^4.6.1",
+    "morgan": "^1.7.0"
   }
 }
