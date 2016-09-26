@@ -1,2 +1,2 @@
 # Daocloud-node
-Daocloud node.js and mongodb &amp; MySQL demo
+Daocloud node.js RESTful API and mongodb.

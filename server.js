@@ -98,7 +98,7 @@ router.route('/bears')
     })
     //请求全部
     .get(function(req, res) {
-        Bear.find(function(err, bears) {
+        models.Bear.find(function(err, bears) {
             if (err) res.send(err);
             res.json(bears);
         });
