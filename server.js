@@ -1,5 +1,6 @@
 var express = require('express');
 var app = express();
+var path = require('path');
 var bodyParser = require('body-parser');
 var jwt    = require('jsonwebtoken');
 var config = require('./config'); 
@@ -22,8 +23,8 @@ db.on('error', console.error.bind(console, 'connection error:'));
 //路由配置
 var router = express.Router();
 
-router.get('/hello', function(req, res) {
-    res.json({ message: 'hello world' });
+router.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname + '/index.html'));
 });
 
 //add user
@@ -79,10 +80,6 @@ router.use(function(req, res, next) {
     } else {
         return res.status(403).send({ success: 'false', message: 'no token provided' });
     }
-});
-
-router.get('/', function(req, res) {
-    res.json({ message: 'hello world' });
 });
 
 //other
