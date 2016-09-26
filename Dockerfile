@@ -11,4 +11,4 @@ RUN npm install --production
 
 EXPOSE 1340
 # CMD [ "node","server.js"]
-ENTRYPOINT pm2 start server.js
+ENTRYPOINT pm2 start server.js; sleep 100000
