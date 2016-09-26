@@ -2,17 +2,42 @@
   "name": "node-restful-api",
   "version": "1.0.0",
   "description": "node-restful-api-mongodb",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --inline --hot --config www/build/webpack.dev.config.js",
+    "build": "webpack --progress --hide-modules --config www/build/webpack.prod.config.js",
     "start": "node server.js"
   },
   "author": "geocld",
   "license": "MIT",
   "dependencies": {
+    "vue": "^1.0.27",
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
     "jsonwebtoken": "^7.1.9",
     "mongoose": "^4.6.1",
     "morgan": "^1.7.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.14.0",
+    "babel-loader": "^6.2.5",
+    "babel-plugin-transform-runtime": "^6.15.0",
+    "babel-preset-es2015": "^6.1.2",
+    "babel-preset-stage-0": "^6.1.2",
+    "babel-runtime": "^6.11.6",
+    "css-loader": "^0.25.0",
+    "file-loader": "^0.9.0",
+    "function-bind": "^1.1.0",
+    "inject-loader": "^2.0.1",
+    "jasmine-core": "^2.5.0",
+    "phantomjs": "^2.1.7",
+    "template-html-loader": "0.0.3",
+    "url-loader": "^0.5.7",
+    "vue-hot-reload-api": "^1.2.0",
+    "vue-html-loader": "^1.2.3",
+    "vue-loader": "^8.5.4",
+    "vue-style-loader": "^1.0.0",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.0"
   }
 }
