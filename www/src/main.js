@@ -1,4 +1,4 @@
-var Vue = require('vue')
-var app = require('./App.vue')
+import Vue from 'vue'
+import app from './App.vue'
 
 new Vue(app);

@@ -21,7 +21,7 @@ var db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 
-app.use('/dist', express.static(path.join(__dirname, 'www/dist')));
+app.use('/www/dist', express.static(path.join(__dirname, 'www/dist')));
 //路由配置
 var router = express.Router();
 
