@@ -5,13 +5,13 @@ Daocloud node.js RESTful API and mongodb.
 
 API:
 
-/api
+GET /api
 
-/api/addUser
+POST /api/addUser
 
-/api/authenticate
+POST /api/authenticate   ##username: admin, password: admin
 
-/api/bears
+GET/POST /api/bears
 
-/api/bears/:bear_id
+GET/POST /api/bears/:bear_id
 
